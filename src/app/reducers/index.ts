@@ -7,13 +7,15 @@ import {
 } from '@ngrx/store';
 import { environment } from '../../environments/environment';
 import { todoReducer } from '../todo/todo.reducer';
+import { filtroReducer } from '../filter/filter.reducer';
 
 export interface State {
 
 }
 
 export const reducers: ActionReducerMap<State> = {
-todos: todoReducer
+  todos: todoReducer,
+  filtro: filtroReducer
 };
 
 

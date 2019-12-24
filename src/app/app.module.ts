@@ -13,7 +13,8 @@ import { reducers, metaReducers } from './reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+import { FilterTodoPipe } from './filter/filter-todo.pipe'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms'
     TodosListComponent,
     TodosItemComponent,
     TodoFooterComponent,
-    TodoAddComponent
+    TodoAddComponent,
+    FilterTodoPipe
   ],
   imports: [
     BrowserModule,
